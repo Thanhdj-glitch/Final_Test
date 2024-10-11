@@ -1,0 +1,131 @@
+body {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  margin: 0; 
+}
+
+.header {
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px;
+  color: #007BFF;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.tabs button:hover {
+  color: #0056b3;
+  border-bottom: 2px solid #007BFF;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+  margin-right: 10px;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #007BFF;
+  outline: none;
+}
+
+button {
+  background-color: #007BFF;
+  color: #007BFF;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.task-list {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.task-list div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.task-list input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-list button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-list button:hover {
+  background-color: #e60000;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.delete-all {
+  background-color: #ff4d4d;
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-all:hover {
+  background-color: #e60000;
+}
